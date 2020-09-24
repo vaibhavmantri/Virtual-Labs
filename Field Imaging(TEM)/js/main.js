@@ -1,5 +1,5 @@
 
-document.getElementById('image_display').src = './images/tem_machine.jpeg'
+document.getElementById('image_display').src = './images/tem_machine.png'
 document.getElementById("image_display").style.display = "none";
 $(document).ready(function () {
     document.getElementById("container").style.display = "none";
@@ -21,7 +21,7 @@ function start() {
             setTimeout(typeWriter, speed);
         }
     }
-    document.getElementById("image1").src = "../images/tem_machine.jpeg"
+    document.getElementById("image1").src = "../images/tem_machine.png"
 }
 document.getElementById("next").style.display = "none"
 var c, img;
@@ -114,7 +114,7 @@ function field(val) {
 }
 function voltagefunction() {
     document.getElementById("image1").src = "../images/tem.gif"
-   setTimeout(function () {document.getElementById('image_display').style.display='block'}, 6000);
+   setTimeout(function () {document.getElementById('image_display').style.display='block'}, 12000);
     console.log(c);
     var i = 0;
     var txt = '4. Image is displayed accordingly.';
