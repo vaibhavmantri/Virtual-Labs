@@ -408,7 +408,7 @@ function execute() {
                 document.getElementById("image_display").src = "./images/5_1000x.PNG"
                 // document.getElementById("voltagetext1").innerHTML = "5 kilo Volts";
                 // document.getElementById("magnificationtext1").innerHTML = "1000x"
-                document.getElementById("demo4").innerHTML = "3. Now you see Image at 5kV and 10,000x Magnification"
+                document.getElementById("demo4").innerHTML = "3. Now you see Image at 5kV and 1000x Magnification"
             }
             if (magnification_range1 == 3) {
                 document.getElementById("image_display").src = "./images/5_5000x.PNG"
@@ -440,7 +440,7 @@ function execute() {
                 document.getElementById("image_display").src = "./images/10_1000x.PNG"
                 document.getElementById("voltagetext1").innerHTML = "10 kilo Volts";
                 document.getElementById("magnificationtext1").innerHTML = "1000x"
-                document.getElementById("demo4").innerHTML = "3. Now you see Image at 10kV and 10,000x Magnification"
+                document.getElementById("demo4").innerHTML = "3. Now you see Image at 10kV and 1000x Magnification"
             }
             if (magnification_range1 == 3) {
                 document.getElementById("image_display").src = "./images/10_5000x.PNG"
@@ -472,7 +472,7 @@ function execute() {
                 document.getElementById("image_display").src = "./images/20_1000x.PNG"
                 document.getElementById("voltagetext1").innerHTML = "20 kilo Volts";
                 document.getElementById("magnificationtext1").innerHTML = "1000x"
-                document.getElementById("demo4").innerHTML = "3. Now you see Image at 20kV and 10,000x Magnification"
+                document.getElementById("demo4").innerHTML = "3. Now you see Image at 20kV and 1000x Magnification"
             }
             if (magnification_range1 == 3) {
                 document.getElementById("image_display").src = "./images/20_5000x.PNG"
@@ -671,7 +671,7 @@ function magnificationtext(magnficationvalue2) {
         document.getElementById("magnificationtext1").innerHTML = "250x"
     }
     if (magnficationvalue2 == 2) {
-        document.getElementById("magnificationtext1").innerHTML = "10,000x"
+        document.getElementById("magnificationtext1").innerHTML = "1000x"
     }
     if (magnficationvalue2 == 3) {
         document.getElementById("magnificationtext1").innerHTML = "5000x"
