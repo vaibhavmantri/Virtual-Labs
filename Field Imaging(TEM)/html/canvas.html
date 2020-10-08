@@ -45,12 +45,13 @@
     <h1 style="text-align:center;">Task:Bright/Dark Field Imaging</h1>
     <div class="col-4" style="padding: 0 0 0 0; position: relative;">
         <h4>Slit Movement</h4>
-        <input type="range" min="1" max="5" id="myrange" value="3" class="slider">
+        <input type="range" min="1" max="3" id="myrange" value="2" class="slider">
         <br>
         <button onclick="ra()" class="btn btn-success">Execute</button>
     </div>
     <div class="col-4" style="float: right;">
         <img src="" alt="" id="imagedisplay" style="width: 70%;">
+        <p id="image_type" style="text-decoration: bold; text-align: center;">Image Displayed</p>
     </div>
     <br>
     <div class="col-4" style="float: right; position: absolute;margin-left:">
@@ -306,24 +307,26 @@
     function ra() {
         var x = document.getElementById("myrange").value;
         console.log(x);
-        if (x == 2) {
+        if (x == 1) {
             document.getElementById("myCanvas").style.display = "none";
             document.getElementById("myCanvas3").style.display = "none";
             document.getElementById("myCanvas2").style.display = "block";
             document.getElementById("imagedisplay").src = "../images/dark1.PNG";
-            showToast("The Slit shits towards left.", 1);
+            document.getElementById("image_type").innerHTML = "Dark Field";
         }
-        else if (x == 4) {
+        else if (x == 3) {
             document.getElementById("myCanvas2").style.display = "none";
             document.getElementById("myCanvas").style.display = "none";
             document.getElementById("myCanvas3").style.display = "block";
             document.getElementById("imagedisplay").src = "../images/dark2.PNG";
+            document.getElementById("image_type").innerHTML = "Dark Field";
         }
-        else if (x == 3) {
+        else if (x == 2) {
             document.getElementById("myCanvas2").style.display = "none";
             document.getElementById("myCanvas3").style.display = "none";
             document.getElementById("myCanvas").style.display = "block";
             document.getElementById("imagedisplay").src = "../images/bright.PNG";
+            document.getElementById("image_type").innerHTML = "Bright Field";
         }
     }
     var tWrapper = $("#toast-wrapper"), ti = 0;
