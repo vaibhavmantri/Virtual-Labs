@@ -390,25 +390,26 @@ function execute() {
     ///////////////////// Effect of Voltage ///////////////////
     if (value == 1) {
         if (voltage_range1 == 0) {
+           
             if (magnification_range1 == 0) {
+                document.getElementById("image_display").src = "./images/5_250x.PNG"
+                // document.getElementById("voltagetext1").innerHTML = "5 kilo Volts";
+                // document.getElementById("magnificationtext1").innerHTML = "250x"
+                document.getElementById("demo4").innerHTML = "3. Now you see Image at 5kV and 250x Magnification"
+            }
+            if (magnification_range1 == 1) {
+                document.getElementById("image_display").src = "./images/5_1000x.PNG"
+                // document.getElementById("voltagetext1").innerHTML = "5 kilo Volts";
+                // document.getElementById("magnificationtext1").innerHTML = "1000x"
+                document.getElementById("demo4").innerHTML = "3. Now you see Image at 5kV and 1000x Magnification"
+            }
+            if (magnification_range1 == 2) {
                 console.log(voltage_range1)
                 console.log(magnification_range1)
                 document.getElementById("image_display").src = "./images/5_2.5x.PNG"
                 // document.getElementById("voltagetext1").innerHTML = "5 kilo Volts";
                 // document.getElementById("magnificationtext1").innerHTML = "2.5x";
                 document.getElementById("demo4").innerHTML = "3. Now you see Image at 5kV and 2.5kx Magnification"
-            }
-            if (magnification_range1 == 1) {
-                document.getElementById("image_display").src = "./images/5_250x.PNG"
-                // document.getElementById("voltagetext1").innerHTML = "5 kilo Volts";
-                // document.getElementById("magnificationtext1").innerHTML = "250x"
-                document.getElementById("demo4").innerHTML = "3. Now you see Image at 5kV and 250x Magnification"
-            }
-            if (magnification_range1 == 2) {
-                document.getElementById("image_display").src = "./images/5_1000x.PNG"
-                // document.getElementById("voltagetext1").innerHTML = "5 kilo Volts";
-                // document.getElementById("magnificationtext1").innerHTML = "1000x"
-                document.getElementById("demo4").innerHTML = "3. Now you see Image at 5kV and 1000x Magnification"
             }
             if (magnification_range1 == 3) {
                 document.getElementById("image_display").src = "./images/5_5000x.PNG"
@@ -424,23 +425,24 @@ function execute() {
             }
         }
         if (voltage_range1 == 1) {
+            
             if (magnification_range1 == 0) {
-                document.getElementById("image_display").src = "./images/10_2.5x.PNG"
-                document.getElementById("voltagetext1").innerHTML = "10 kilo Volts";
-                document.getElementById("magnificationtext1").innerHTML = "2.5x"
-                document.getElementById("demo4").innerHTML = "3. Now you see Image at 10kV and 2.5kx Magnification"
-            }
-            if (magnification_range1 == 1) {
                 document.getElementById("image_display").src = "./images/10_250x.PNG"
                 document.getElementById("voltagetext1").innerHTML = "10 kilo Volts";
                 document.getElementById("magnificationtext1").innerHTML = "250x"
                 document.getElementById("demo4").innerHTML = "3. Now you see Image at 10kV and 250x Magnification"
             }
-            if (magnification_range1 == 2) {
+            if (magnification_range1 == 1) {
                 document.getElementById("image_display").src = "./images/10_1000x.PNG"
                 document.getElementById("voltagetext1").innerHTML = "10 kilo Volts";
                 document.getElementById("magnificationtext1").innerHTML = "1000x"
                 document.getElementById("demo4").innerHTML = "3. Now you see Image at 10kV and 1000x Magnification"
+            }
+            if (magnification_range1 == 2) {
+                document.getElementById("image_display").src = "./images/10_2.5x.PNG"
+                document.getElementById("voltagetext1").innerHTML = "10 kilo Volts";
+                document.getElementById("magnificationtext1").innerHTML = "2.5kx"
+                document.getElementById("demo4").innerHTML = "3. Now you see Image at 10kV and 2.5kx Magnification"
             }
             if (magnification_range1 == 3) {
                 document.getElementById("image_display").src = "./images/10_5000x.PNG"
@@ -456,23 +458,24 @@ function execute() {
             }
         }
         if (voltage_range1 == 3) {
+            
             if (magnification_range1 == 0) {
-                document.getElementById("image_display").src = "./images/20_2.5x.PNG"
-                document.getElementById("voltagetext1").innerHTML = "20 kilo Volts";
-                document.getElementById("magnificationtext1").innerHTML = "2.5x"
-                document.getElementById("demo4").innerHTML = "3. Now you see Image at 20kV and 2.5kx Magnification"
-            }
-            if (magnification_range1 == 1) {
                 document.getElementById("image_display").src = "./images/20_250x.PNG"
                 document.getElementById("voltagetext1").innerHTML = "20 kilo Volts";
-                document.getElementById("magnificationtext1").innerHTML = "2.5x"
+                document.getElementById("magnificationtext1").innerHTML = "250x"
                 document.getElementById("demo4").innerHTML = "3. Now you see Image at 20kV and 250x Magnification"
             }
-            if (magnification_range1 == 2) {
+            if (magnification_range1 == 1) {
                 document.getElementById("image_display").src = "./images/20_1000x.PNG"
                 document.getElementById("voltagetext1").innerHTML = "20 kilo Volts";
                 document.getElementById("magnificationtext1").innerHTML = "1000x"
                 document.getElementById("demo4").innerHTML = "3. Now you see Image at 20kV and 1000x Magnification"
+            }
+            if (magnification_range1 == 2) {
+                document.getElementById("image_display").src = "./images/20_2.5x.PNG"
+                document.getElementById("voltagetext1").innerHTML = "20 kilo Volts";
+                document.getElementById("magnificationtext1").innerHTML = "2.5kx"
+                document.getElementById("demo4").innerHTML = "3. Now you see Image at 20kV and 2.5kx Magnification"
             }
             if (magnification_range1 == 3) {
                 document.getElementById("image_display").src = "./images/20_5000x.PNG"
@@ -664,14 +667,15 @@ function voltagetext(voltagevalue) {
 }
 function magnificationtext(magnficationvalue2) {
     console.log(magnficationvalue2)
+    
     if (magnficationvalue2 == 0) {
-        document.getElementById("magnificationtext1").innerHTML = "2.5kx"
-    }
-    if (magnficationvalue2 == 1) {
         document.getElementById("magnificationtext1").innerHTML = "250x"
     }
-    if (magnficationvalue2 == 2) {
+    if (magnficationvalue2 == 1) {
         document.getElementById("magnificationtext1").innerHTML = "1000x"
+    }
+    if (magnficationvalue2 == 2) {
+        document.getElementById("magnificationtext1").innerHTML = "2.5kx"
     }
     if (magnficationvalue2 == 3) {
         document.getElementById("magnificationtext1").innerHTML = "5000x"
